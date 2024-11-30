@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finico - Money Transfer Service</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+
+<body class=" text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-[#F8F7F6] text-black fixed w-full top-0 left-0 shadow-lg z-50">
+    <div class="container mx-auto flex justify-between items-center pl-6 md:pl-20 py-3 px-3 relative">
+      <div class="flex items-center pl-1">
+        <img src="images/juba_pay.png" alt="Logo" class="h-10 w-36 md:w-60">
+      </div>
+      <div class="flex items-center">
+        <nav class="hidden md:flex space-x-9">
+          <a href="#home" class="hover:underline">Home</a>
+          <a href="https://niwin.co.in/crm/login" class="hover:underline" target="_blank">DSA Login</a>
+          <a href="#services" class="hover:underline">Services</a>
+          <a href="#contact" class="hover:underline">Contact</a>
+        </nav>
+        <button class="md:hidden text-black focus:outline-none" id="menu-button">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="md:hidden bg-[#F8F7F6] shadow-lg absolute top-16 left-0 w-full hidden" id="mobile-menu">
+      <nav class="flex flex-col items-center py-4 space-y-4">
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="https://niwin.co.in/crm/login" class="hover:underline" target="_blank">DSA Login</a>
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    document.getElementById('menu-button').onclick = function () {
+      var mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.remove('hidden');
+      } else {
+        mobileMenu.classList.add('hidden');
+      }
+    }
+  </script>
+
+  <style>
+    #menu-button {
+      outline: none;
+    }
+  </style>
+
+  <!-- Hero Section -->
+
+  <section class="bg-blue-500 text-white pt-20" id="home">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between">
+      <!-- Left Section -->
+      <div class="max-w-md lg:pl-28 lg:pt-12 p-4 lg:rounded-lg rounded-lg text-center lg:text-left">
+        <p class="text-sm font-light underline">A Digital Money Transfer Method</p>
+        <h1 class="text-3xl font-bold my-2">
+          Send And Receive <br> Money Anywhere <br>In The World
+        </h1>
+        <p class="text-sm font-light mb-6">
+          Although it is a factor in financial inclusion and development, the growth of mobile banking saharan Africa
+          (SSA)
+        </p>
+        <div class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 mb-6 my-6">
+          <button class="bg-white text-blue-600 font-bold py-2 px-4 rounded">Get Started Now</button>
+          <button class="bg-blue-700 text-white font-bold py-2 px-4 rounded">Watch Videos</button>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-4 py-4">
+          <div class="flex -space-x-2">
+          </div>
+          <div class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-12 items-center">
+            <div>
+              <p class="text-lg font-bold">357K</p>
+              <p class="text-sm font-light">Active User</p>
+            </div>
+            <div>
+              <p class="text-lg font-bold">200K+</p>
+              <p class="text-sm font-light">Reviews</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right Section for the Image -->
+      <div class="mb-12 lg:pt-4 lg:pr-20 pt-4 p-4 flex justify-center lg:justify-start">
+        <img src="images/pic_5.png" alt="Logo" class="h-100 w-100 rounded-full"
+          style="max-width: 100%; border-radius: 25px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <div class="pt-20" id="services">
+    <div class="text-center mb-8">
+      <a href="#" class="text-blue-600 font-bold text-lg underline pt-20">Services We Provide</a>
+      <h2 class="text-3xl font-bold mt-2">Our ficino is a multi functional <br>all-in-one platform</h2>
+    </div>
+
+    <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 justify-center items-center px-8">
+      <!-- Card 1 -->
+      <div class="bg-[#C6E0D5] shadow-md rounded-lg p-6 text-center max-w-sm w-full m-1 ">
+        <div class="bg-black rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+          <svg class="h-8 w-8 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Lighting Fast Speed</h3>
+        <p class="text-gray-700 text-sm">Although it is a factor in financial inclusion and development, the growth of
+          mobile banking Subaharan Africa (SSA)</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-[#F9F9D7] shadow-md rounded-lg p-6 text-center max-w-sm w-full m-1">
+        <div class="bg-black rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+          <svg class="h-8 w-8 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M14.31 8L20 20M9.69 8L4 20M12 4v4M6 6h12M6 16h12" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Digital Technology</h3>
+        <p class="text-gray-700 text-sm">Although it is a factor in financial inclusion and development, the growth of
+          mobile banking Subaharan Africa (SSA)</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-[#FFF0C0] shadow-md rounded-lg p-6 text-center max-w-sm w-full m-1">
+        <div class="bg-black rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+          <svg class="h-8 w-8 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M2.05 12l7.38 7.38m1.57-1.57L6 12m4.72-12l7.38 7.38m-1.57 1.57L18 12" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">World-Wide Transfer</h3>
+        <p class="text-gray-700 text-sm">Although it is a factor in financial inclusion and development, the growth of
+          mobile banking Subaharan Africa (SSA)</p>
+      </div>
+    </div>
+
+    <!-- money flow section -->
+    <section class="py-12">
+      <div class="container mx-0 md:flex ">
+        <div class="flex-1 flex justify-center md:mb-0 md:mr-8">
+          <div class="bg-white-600 p-4 pb-0 flex flex-col items-center">
+            <img src="images/pic_6.png" alt="Happy Woman" class="-mb-36 w-80 h-80">
+
+            <div class=" p-2 ">
+              <div class="inline-flex">
+                <!-- Monthly -->
+              </div>
+              <!-- </div> -->
+              <!-- <div class="text-gray-700 text-xs mx-0 px-0 py-0 bg-blue-600 text-white rounded-md">Monthly</div> -->
+
+              <!-- Placeholder for bar chart -->
+              <div class="h-24 bg-white rounded-md"></div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="mb-12 pt-16 py-12 px-8">
+            <h4 class="text-lg font-bold text-blue-500 underline mb-2 pl-12">Awesome Feature</h4>
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-4">We give a nice and simple overview<br> to your
+              finance.</h2>
+            <p class="text-black-600 mb-4">Although it is a factor in financial inclusion and the require manets<br>
+              development, the growth of mobile banking saharan Africa (SSA)</p>
+            <button class="px-3 py-2 bg-blue-600 text-white rounded-md">Get Started Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="container flex flex-wrap pt-8 py-14">
+        <div class="w-full lg:w-1/2 pr-8 pl-28">
+          <h4 class="text-lg font-bold text-blue-500 underline">Best Solution Ever</h4>
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Our one-stop solution for <br>international money transfers
+          </h2>
+          <p class="text-black mb-4">
+            Although it is a factor in financial inclusion and development,<br> the growth of
+            mobile banking saharan Africa (SSA)
+          </p>
+          <button class="px-3 py-2 bg-blue-600 text-white rounded-md">Get Started Now</button>
+        </div>
+        <div class="w-full lg:w-1/2 flex justify-center items-center ">
+          <image src="images/pic_7.png" alt="Logo" class="h-90 w-90 " style="border-radius: 25px;">
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-12 bg-gray-100">
+      <div class="container mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-lg text-blue-500 underline font-bold">Testimonials</h2>
+          <h2 class="text-4xl font-bold">See why our customer <br>loves us</h2>
+        </div>
+
+        <div class="flex flex-wrap justify-center space-x-4 space-y-4 md:space-y-0 ">
+          <div class="bg-white p-8 hover:bg-blue-500 rounded-xl shadow-md w-full sm:w-80 h-64">
+            <p class="mb-4">Although it is a factor in financial inclusion and development, the growth of mobile banking
+              in Sub-Saharan Africa (SSA) has...</p>
+            <div class="flex items-center">
+              <img src="images/human1.webp" alt="Customer" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h4 class="font-bold">Brooklyn Simmons</h4>
+                <p class="text-gray-500">Manager at Zezo</p>
+                <div class="text-yellow-500">⭐ 5.0</div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-8 hover:bg-blue-500 rounded-xl shadow-md w-full sm:w-80 h-64">
+            <p class="mb-4">Although it is a factor in financial inclusion and development, the growth of mobile banking
+              in Sub-Saharan Africa (SSA) has...</p>
+            <div class="flex items-center">
+              <img src="images/human2.jpg" alt="Customer" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h4 class="font-bold">Brooklyn Simmons</h4>
+                <p class="text-gray-500">Manager at Zezo</p>
+                <div class="text-yellow-300">⭐ 5.0</div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-8 hover:bg-blue-500 rounded-xl shadow-md w-full sm:w-80 h-64 ">
+            <p class="mb-4">Although it is a factor in financial inclusion and development, the growth of mobile banking
+              in Sub-Saharan Africa (SSA) has...</p>
+            <div class="flex items-center">
+              <img src="images/human3.avif" alt="Customer" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h4 class="font-bold">Brooklyn Simmons</h4>
+                <p class="text-gray-500">Manager at Zezo</p>
+                <div class="text-yellow-500">⭐ 5.0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section  -->
+    <section class="bg-blue-600 text-white" id="contact">
+      <footer class="px-4 py-8 md:pl-12 md:pr-24 md:pt-16">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between">
+          <div class="w-full md:w-1/2 lg:w-2/3">
+            <img src="images/juba_pay.png" alt="Logo" class="h-10 w-60">
+            <!-- <h1 class="text-2xl font-bold">JUBA PAY</h1> -->
+            <p class="mt-2 text-sm pt-6">
+              Although it is a factor in financial inclusion and the require magnets<br class="hidden md:inline">
+              development, the growth of mobile banking.
+            </p>
+            <p class="mt-2 text-sm pt-4 pb-8 md:pl-0 md:ml-0 text-center md:text-left xl:ml-96 xl:pl-20">
+              Seative Digital©2022 All Rights Reserved
+            </p>
+          </div>
+          <div class="flex flex-row md:flex-row md:space-y-0 md:space-x-8 xl:pt-8 md:pt-0 xl:-mr-16">
+            <h2 class="font-semibold text-center md:text-left">Privacy Policy</h2>
+            <h2 class="font-semibold text-center md:text-left">Refund Policy</h2>
+            <h2 class="font-semibold text-center md:text-left">Terms & Conditions</h2>
+          </div>
+        </div>
+      </footer>
+    </section>
